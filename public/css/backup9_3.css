@@ -1,0 +1,330 @@
+/*  FOR TEMPLET Master */
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.top{
+	padding:10px;
+	background-color: #B993D6;
+	height: 130px;
+}
+
+body {
+    display: flex;
+    justify-content: left;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #8CA6DB;
+  }
+
+#content {
+	padding:10px;
+    width: 86vw;
+	min-height: 100vh;
+    height: auto;
+    background-color: #B993D6;
+    box-shadow: 0 0 20px rgba(3, 3, 3, 0.1);
+}
+
+.item{
+	position: fixed;/*fixed on the top of page*/
+	width: 8vw;
+	top:10px;
+	right:20px;
+	margin: 0;
+	padding: 0;
+	/*display: box;  弹性布局，使li排成一行*/
+}
+
+.item li{
+	list-style: none;
+}
+.item li a{
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+	margin: 20px 0;
+	text-decoration: none;
+	text-transform: uppercase;  /*make all capital*/
+	color: #262626;
+	font-weight: bold;
+}
+.item li a:hover{
+	color:#fff;
+}
+
+/*  FOR postBlock ############################################################################*/
+.PostDate table {
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+.PostDate th {
+  padding: 5px;
+  text-align: left;
+  align-items: left;
+}
+
+.PostDate #postName{
+	width: 20vw;
+}
+
+.PostDate #postDate{
+	width: 30vw;
+}
+
+.PostDate #Date{
+	width: 48%;
+	display:inline-block;
+}
+
+.PostDate #updateDate{
+	width: 48%;
+	display:inline-block;
+}
+
+/*  FOR MAIN PAGE ############################################################################*/
+
+/* 2 post div, message on the right*/
+.leftPost{
+	padding: 5px;
+	width:17%;
+	display:inline-block;
+	
+}
+.rightPost{
+	padding: 20px;
+	width:68%;
+	display:inline-block;
+  	
+}
+
+.postForm #Formstyle{
+	padding-left: 30px;
+	width:80vw;
+	height:230px;
+	background-color:rgba(255, 255, 255, 0.05);
+	border-radius: 20px;
+	color: #eee;
+	margin-top: 3px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+	box-shadow: 0px 2px 10px #111;
+}
+
+
+.inputPost{
+	margin-top: 3px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+
+.postForm #content{
+	height:200px;
+	background-color:#6699CC;
+	border-radius: 20px;
+}
+
+.postForm strong{
+	font-weight: bold;
+	color:#006699;
+}
+
+.postForm button{
+	width: 60px;
+	height: 60px;
+	border-radius: 40%;
+	color: #006699;
+	margin-left: 50px;
+	font-weight: bold;
+	box-shadow: 0px 2px 10px #111;
+}
+
+.postForm input{
+	width: 10vw;
+}
+
+.postForm textarea {
+	width: 70vw; /* or specify a fixed width */
+	height: 130px; /* or specify a fixed height */
+	font-size: 16px;
+  	color: #333;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+
+
+.postForm textarea {
+	resize: none;
+	padding: 4px;
+	max-width: 100%;
+	line-height: 1.5;
+	border-radius: 16px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 1px #999;
+}
+
+input{
+	resize: none;
+	padding: 2px;
+	max-width: 100%;
+	line-height: 1.5;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 1px #999;
+}
+
+.mainNewpost{
+    border-color:rgb(3, 0, 0);
+    border-style:double;
+    padding:10px;
+}
+
+
+  /*  FOR USER PAGE ############################################################################*/
+.newpost{
+	border-radius: 10px;
+	margin-top: 20px;
+	width:500px;
+	border-color:rgb(202, 103, 177);
+    border-style: groove;
+    padding:20px;
+	display:inline-block;
+}
+
+.authorsID{
+	border-radius: 50px;
+	margin-top: 20px;
+	margin-right: 100px;
+	width:100px;
+	border-color:rgb(100, 224, 89);
+    border-style: groove;
+    padding:20px;
+	float:right;
+}
+
+ /*  FOR DETAILS PAGE ############################################################################*/
+#postTitle{
+    border-color:rgb(214, 14, 14);
+    border-style: groove;
+    padding:10px;
+}
+
+#postArticle{
+	border-radius: 5px;
+	margin-top: 20px;
+	height:600px;
+	background-color:#b18119ad;
+	border-color:rgb(160, 110, 16);
+    border-style: groove;
+    padding:10px;
+}
+
+#postLike{
+	margin-top: 1px;
+	width: auto;
+	height:30px;
+    padding:5px;
+	float:right;
+}
+
+.InputlikeName{
+	margin-top: 1px;
+	padding:5px;
+}
+
+.postComments #allComments{
+	border-radius: 5px;
+	margin-top: 20px;
+	width:90%;
+	height:300px;
+	background-color:#1624ebad;
+    padding:10px;
+}
+
+.postComments #commentuser{
+	border-radius: 5px;
+	margin-top: 10px;
+	width:auto;
+	height:15px;
+	background-color:#6361d4ad;
+	padding:10px;
+}
+
+.postComments #postComments{
+	border-radius: 5px;
+	margin-top: 20px;
+	width:80%;
+	height:100px;
+	background-color:#a9ccb6ad;
+	border-color:rgb(245, 194, 100);
+    border-style: groove;
+    padding:10px;
+}
+
+.postComments #dateComments{
+	border-radius: 5px;
+	margin-top: 10px;
+	width:100px;
+	height:15px;
+	background-color:#7c6efcad;
+	padding:10px;
+}
+
+.addComment #addComment{
+	width:70vw;
+	padding:5px;
+}
+
+.addComment #commentMessage{
+	width:70vw;
+	margin-top: 5px;
+}
+.addComment #commentName{
+	width:15vw;
+	margin-top: 5px;
+}
+.addComment button{
+	width:15vw;
+	margin-top: 5px;
+}
+.addComment textarea {
+	resize: none;
+	height: 120px;
+	padding: 4px;
+	max-width: 100%;
+	line-height: 1.5;
+	border-radius: 16px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 1px #999;
+}
+
+.commentBlock{
+	width:50%;
+	background-color:hsla(0, 43%, 44%, 0.678);
+}
+
+#subcommentBlock{
+	padding:20px;
+	width:50%;
+	border-radius: 20px;
+	height:200px;
+	background-color:hsla(59, 87%, 63%, 0.678);
+}
+
+.likebutton button{
+	background-image: url('https://cdn-icons-png.flaticon.com/128/10452/10452351.png');
+	background-size: 30px 30px;
+	width: 30px;
+    height: 30px;
+}
+.likebutton2 button{
+	background-image: url('https://cdn-icons-png.flaticon.com/128/818/818547.png');
+	background-size: 30px 30px;
+	width: 30px;
+    height: 30px;
+}

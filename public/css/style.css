@@ -1,0 +1,479 @@
+/*  FOR TEMPLET Master */
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+img{
+	height: 30px;
+	width: 30px;
+}
+
+.top{
+	padding:50px;
+	background: linear-gradient(90deg, #B993D6,95%, #8CA6DB);
+	height: 130px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.top #welcome{
+	text-align: right;
+	font-size: 15px;
+	color:aqua;
+}
+
+body {
+    display: flex;
+    justify-content: left;
+    min-height: 85vh;
+    margin: 0;
+    background-color: #8CA6DB;
+  }
+
+#content {
+	padding:10px;
+    width: 86vw;
+	min-height: 85vh;
+    height: auto;
+    background: linear-gradient(90deg, #B993D6,95%, #8CA6DB);
+}
+
+.item{
+	position: fixed;/*fixed on the top of page*/
+	width: 8vw;
+	top:10px;
+	right:20px;
+	margin: 0;
+	padding: 0;
+	/*display: box;  弹性布局，使li排成一行*/
+}
+
+.item li{
+	list-style: none;
+}
+.item li a{
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+	margin: 20px 0;
+	text-decoration: none;
+	text-transform: uppercase;  /*make all capital*/
+	color: #262626;
+	font-weight: bold;
+}
+.item li a:hover{
+	color:#fff;
+}
+
+/*  FOR postBlock ############################################################################*/
+.PostDate table {
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+.PostDate th {
+  padding: 5px;
+  text-align: left;
+  align-items: left;
+}
+
+.PostDate #postName{
+	width: 30vw;
+}
+
+.PostDate #postDate{
+	width: 30vw;
+}
+
+.PostDate #Date{
+	width: 90%;
+	display:inline-block;
+}
+
+
+
+/*  FOR MAIN PAGE ############################################################################*/
+
+/* 2 post div, message on the right*/
+.leftPost{
+	padding: 5px;
+	width:17%;
+	display:inline-block;
+	
+}
+.rightPost{
+	padding: 20px;
+	width:68%;
+	display:inline-block;
+  	
+}
+
+.postForm #Formstyle{
+	padding-left: 30px;
+	width:80vw;
+	height:230px;
+	background-color:rgba(255, 255, 255, 0.05);
+	border-radius: 20px;
+	color: #eee;
+	margin-top: 3px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+	box-shadow: 0px 2px 10px #111;
+}
+
+
+.inputPost{
+	margin-top: 3px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+
+.postForm #content{
+	height:200px;
+	background-color:#6699CC;
+	border-radius: 20px;
+}
+
+.postForm strong{
+	font-weight: bold;
+	color:#006699;
+}
+
+.ErrorM strong{
+	color:red;
+	margin-left: 20px;
+}
+
+
+.postForm button{
+	margin-top: 15px;
+	width: 60px;
+	height: 60px;
+	border-radius: 40%;
+	color: #006699;
+	margin-left: 50px;
+	font-weight: bold;
+	box-shadow: 0px 2px 10px #111;
+}
+.postForm button:hover {
+	box-shadow: 7px 5px 56px -14px #C3D900;
+}
+.postForm button:active {
+transform: scale(0.97);
+box-shadow: 7px 5px 56px -10px #C3D900;
+}
+
+.postForm input{
+	width: 10vw;
+}
+
+.postForm textarea {
+	resize: none;
+	width: 70vw; /* or specify a fixed width */
+	height: 130px; /* or specify a fixed height */
+	font-size: 16px;
+  	color: #333;
+	padding: 20px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 2px 10px #111;
+	padding: 4px;
+	max-width: 100%;
+	border-radius: 20px;
+}
+
+
+
+
+input{
+	resize: none;
+	padding: 2px;
+	max-width: 100%;
+	line-height: 1.5;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 2px 10px #111;
+}
+
+
+.mainNewpost #newpost{
+	padding:8px;
+	margin-top: 20px;
+	cursor: pointer;
+	border-color:rgb(226, 69, 218);
+	width: 80vw;
+ 	height: auto;
+	border-radius: 20px;
+	border: 1px solid rgba(0, 0, 255, .2);
+ 	transition: all .2s;
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.mainNewpost:hover {
+	margin-left: +20px;
+}
+
+#ErrorM p{
+	color:red; 
+	text-indent: 5px;
+}
+
+  /*  FOR USER PAGE ############################################################################*/
+.AuthorPostAll #authors{
+	border-radius: 10px;
+	margin-top: 20px;
+	width:500px;
+	border-color:rgb(108, 95, 105);
+    border-style: groove;
+    padding:20px;
+	display:inline-block;
+}
+
+.AuthorPostAll th{
+	margin: auto;
+	width: 30%;
+}
+
+.authorsID{
+	margin: auto;
+	border-radius: 50%;
+	width:3vw;
+	border-color:rgb(100, 224, 89);
+    border-style: groove;
+    padding:20px;
+}
+
+ /*  FOR DETAILS PAGE ############################################################################*/
+#postTitle{
+	border-radius: 20px;
+    border-color: #698fdc;
+    border-style: groove;
+    padding:10px;
+	height:auto;
+	margin-bottom: 5px;
+}
+
+.detail th{
+	width: 30vw;
+	text-align: left;
+}
+
+.changeButton button{
+	border: 1px solid seagreen;
+	border-radius: 5px;
+	background: rgb(255, 255, 255);
+	color: seagreen;
+	font-style: italic;
+	padding: 5px;
+	padding-right: 14px;
+	padding-left: 12px;
+	font-size: 10px;
+}
+
+.changeButton button:hover {
+	background-color: rgb(225, 28, 28);
+	color: white;
+	border: 1px solid  rgb(225, 28, 28);
+	box-shadow: 7px 5px 56px -14px #5ff470;
+}
+
+#postArticle{
+	word-break: break-all;
+	border-radius: 5px;
+	margin-top: 20px;
+	min-height: 200px;
+	height:auto;
+	background-color:#b58cd4;
+	border-color:#a37cc0;
+    border-style: groove;
+    padding:10px;
+}
+
+#postLike{
+	margin-top: 1px;
+	width: auto;
+	height:30px;
+    padding:5px;
+	float:right;
+	text-align: center;
+	font-size: 30px;
+}
+
+.InputlikeName{
+	margin-top: 1px;
+	width: 10vw;
+	padding:5px;
+}
+
+.postComments #allComments{
+	border-radius: 20px;
+	margin-top: 20px;
+	width:80%;
+	height:300px;
+	background-color:#1624ebad;
+    padding:10px;
+}
+
+
+.postComments #commentuser{
+	border-radius: 10px 10px 0 0;
+	margin: auto;
+	width:98%;
+	height:15px;
+	background-color:#76c1dead;
+	padding:10px;
+}
+
+.postComments #postComments{
+	word-break: break-all;
+	border-radius:0 0 10px 10px;
+	margin: auto;
+	width:98%;
+	height:auto;
+    padding:10px;
+	background: rgb(5, 6, 45);
+	color:#9a8fde
+}
+
+
+
+
+.addComment #addComment{
+	width:70vw;
+	padding:5px;
+}
+
+.addComment #commentMessage{
+	width:70vw;
+	margin-top: 10px;
+}
+.addComment #commentName{
+	width:15vw;
+	margin-top: 10px;
+}
+
+.addComment textarea{
+	resize: none;
+	height: 120px;
+	padding: 4px;
+	width: auto;
+	line-height: 1.5;
+	border-radius: 16px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 2px 10px #111;
+}
+
+.addComment button{
+	margin-left:3vw;
+	border: 1px solid seagreen;
+	border-radius: 5px;
+	background: rgb(255, 255, 255);
+	color: seagreen;
+	font-style: italic;
+	padding: 10px;
+	padding-right: 14px;
+	padding-left: 12px;
+	font-size: 17px;
+}
+.addComment button:hover {
+	background-color: seagreen;
+	color: white;
+	border: 1px solid  seagreen;
+}
+
+.changeText textarea{
+	resize: none;
+	width: 85%;
+	height: 60vh;
+	padding: 4px;
+	max-width: 100%;
+	line-height: 1.5;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 2px 10px #111;
+}
+.change button{
+	width: 30vw;
+	height: 30vh;
+}
+
+.commentBlock{
+	margin-top:20px;
+	height:auto;
+	width:95%;
+	padding: 0.2vw;
+ 	box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+ 	background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+	border-radius: 10px;
+}
+
+.commentBlock #img{
+	vertical-align: top;
+	display:inline-block;
+	width: 3%;
+}
+.commentBlock #subcommentBlock{
+	display:inline-block;
+	width:95%;
+	height:auto;
+}
+
+.subcommentBlock #subcommentBlock{
+	position: relative;
+	float: right;
+	display: none;
+}
+.commentBlock:hover{
+	box-shadow: 3px 3px 3px red;
+}
+.commentBlock:hover ~.commentBlock{
+	filter: blur(8px);
+}
+.commentBlock:hover #subcommentBlock{
+	display: inline-block;
+}
+
+
+.likebutton button{
+	border-radius: 20%;
+	border-color: #B993D6;
+	background-color: #B993D6;
+	background-image: url('https://cdn-icons-png.flaticon.com/128/2589/2589175.png');
+	background-size: 30px 30px;
+	width: 35px;
+    height: 35px;
+	box-shadow: 7px 5px 56px -14px #ff0404;
+}
+.likebutton2 button{
+	border-radius: 20%;
+	border-color: #B993D6;
+	background-color: #B993D6;
+	background-image: url('https://cdn-icons-png.flaticon.com/128/1077/1077035.png');
+	background-size: 30px 30px;
+	width: 35px;
+    height: 35px;
+	box-shadow: 7px 5px 56px -14px #ff0404;
+}
+
+.replyblock{
+	padding:5px;
+}
+.replyblock #img{
+	vertical-align: top;
+	display:inline-block;
+}
+.replyblock #repCom{
+	display:inline-block;
+	width: 77%;
+}
+.replyblock #link{
+	text-align: center;
+	width: 8vw;
+	padding: auto;
+	border-radius: 10%;
+	border-style:double;
+	border-color: #5ff470;
+}
